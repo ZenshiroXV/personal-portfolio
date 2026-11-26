@@ -1,21 +1,25 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sahil Nishat | Game Development Student</title>
+
+    <title>Sahil Farrukh Nishat | Portfolio</title>
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <nav>
-            <h2>Sahil Nishat</h2>
+    <!-- NAVIGATION -->
+    <header class="navbar">
+        <a href="index.html" class="logo">SN</a>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="skills.html">Skills</a></li>
                 <li><a href="projects.html">Projects</a></li>
@@ -23,24 +27,181 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+
+        <button id="theme-toggle" class="theme-toggle">
+            <span>☀</span>
+            <span>☾</span>
+        </button>
     </header>
 
+
     <main>
-        <section id="hero">
-            <p>GAME DEVELOPMENT STUDENT</p>
 
-            <h1>Hello, I'm Sahil.</h1>
+        <!-- HERO SECTION -->
+        <section class="hero">
 
-            <p>
-                Welcome to my portfolio. I'm a video game development
-                student interested in level designing and 3D modeling.
-            </p>
+            <div class="hero-content">
 
-            <a href="projects.html">View My Projects</a>
-            <a href="contact.html">Contact Me</a>
+                <div class="welcome-badge">
+                    ✦ &nbsp; Welcome to my portfolio!
+                </div>
+
+                <h1>Sahil Farrukh Nishat</h1>
+
+                <h2>Game Development Student</h2>
+
+                <p>
+                    Hi, I'm Sahil. I love making games, building cool
+                    websites, and exploring new technologies.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="projects.html" class="button button-primary">
+                        View My Projects →
+                    </a>
+
+                    <a href="contact.html" class="button button-outline">
+                        Contact Me
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- CAT IMAGE WILL GO HERE LATER -->
+            <div class="hero-visual">
+                <div class="visual-placeholder"></div>
+            </div>
+
         </section>
+
+
+        <!-- ABOUT BANNER -->
+        <section class="about-banner">
+
+            <div class="about-icon">i</div>
+
+            <div class="about-text">
+                <h3>About Me</h3>
+
+                <p>
+                    I'm a 4th year Game Development student at
+                    LaSalle College Montréal, passionate about
+                    creating immersive experiences.
+                </p>
+            </div>
+
+            <a href="about.html" class="learn-more">
+                Learn More →
+            </a>
+
+        </section>
+
+
+        <!-- SKILLS AND PROJECTS -->
+        <section class="dashboard">
+
+            <!-- TECHNICAL SKILLS -->
+            <div class="skills-preview">
+
+                <div class="section-title">
+                    <span class="section-icon">&lt;/&gt;</span>
+                    <h2>Technical Skills</h2>
+                </div>
+
+                <div class="skills-list">
+
+                    <div class="skill">HTML5</div>
+                    <div class="skill">CSS3</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">C#</div>
+                    <div class="skill">Unreal Engine</div>
+                    <div class="skill">Unity</div>
+                    <div class="skill">Git & GitHub</div>
+                    <div class="skill">Level Design</div>
+
+                </div>
+
+            </div>
+
+
+            <!-- LATEST PROJECTS -->
+            <div class="projects-preview">
+
+                <div class="section-title project-heading">
+                    <div class="section-title-left">
+                        <span class="section-icon">▰</span>
+                        <h2>Latest Projects</h2>
+                    </div>
+
+                    <a href="projects.html">View All Projects →</a>
+                </div>
+
+
+                <div class="project-list">
+
+                    <article class="project-card">
+
+                        <div class="project-image unity-image">
+                            <span>UNITY</span>
+                        </div>
+
+                        <div class="project-info">
+                            <h3>Escape Room</h3>
+                            <p>Interactive puzzle game in Unity</p>
+                        </div>
+
+                        <a href="projects.html" class="project-arrow">→</a>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-image unreal-image">
+                            <span>UNREAL ENGINE</span>
+                        </div>
+
+                        <div class="project-info">
+                            <h3>Movement Prototype</h3>
+                            <p>First-person movement mechanics</p>
+                        </div>
+
+                        <a href="projects.html" class="project-arrow">→</a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
     </main>
 
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer-time">
+            <span class="clock-icon">◷</span>
+
+            <div>
+                <h3 id="clock">00:00</h3>
+                <p id="date">Loading date...</p>
+            </div>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/ZenshiroXV" target="_blank">GitHub</a>
+            <a href="#">YouTube</a>
+            <a href="#">Discord</a>
+        </div>
+
+    </footer>
+
+
     <script src="js/script.js"></script>
+
 </body>
 </html>
+
